@@ -43,3 +43,7 @@ function filterData() { // För att filtrera datan
         row.progression.toLowerCase().includes(searchPhrase));
     showData(filteredData) // Kallar på funktionen igen men genom att filtrera
 }
+document.getElementById("course-code").addEventListener("click", () =>
+    console.log("Det fungerar!"));
+document.getElementById("course-name").addEventListener("click");
+document.getElementById("course-progression").addEventListener("click");

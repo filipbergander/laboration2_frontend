@@ -7,9 +7,6 @@ document.addEventListener("DOMContentLoaded", async() => {
 
 let allData = [];
 
-const code = [
-    {}
-]
 
 async function importData() {
     try {
@@ -19,13 +16,15 @@ async function importData() {
         const info = await response.json();
         console.table(info)
         showData(info);
+        allData = info
     } catch (error) {
         console.error("Felmeddelanden: ", error);
     }
 }
 
 function showData(info) {
-    const tableEl = document.getElementById("main-table");
+    const tableEl = document.getElementById("table-body");
+    tableEl.innerHTML = ""; // Rensar listan 
     info.forEach(row => { //Loopa genom varje index
         tableEl.innerHTML += `
     <tr>
@@ -35,4 +34,13 @@ function showData(info) {
     </tr>
         `
     });
+}
+
+function filterData() {
+    const searchPhrase = document.getElementById("search").value;
+    const filteredData = allData.filter((row) =>
+        row.code.toLowerCase().includes(searchPhrase) ||
+        row.coursename.toLowerCase().includes(searchPhrase) ||
+        row.progression.toLowerCase().includes(searchPhrase));
+    showData(filteredData)
 }

@@ -5,18 +5,19 @@
 }
 
 body {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: azure;
 }
 
 .container {
     max-width: 1140px;
     margin: 0 auto;
     text-align: left;
-    font-weight: 400;
     margin-top: 5vh;
-    box-shadow: 0 0 2px 3px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    height: 100vh;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    height: 100%;
+    background-color: bisque;
 }
 
 .search-bar {
@@ -33,3 +34,47 @@ body {
     border-radius: 8px;
     padding: 0.8em;
 }
+
+main {
+    display: block;
+    color: rgb(34, 31, 31);
+}
+
+th {}
+
+#main-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#main-table th {
+    text-decoration: underline;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.204);
+}
+
+#main-table td,
+#main-table tr {
+    font-size: 1.1rem;
+    padding: 10px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.204);
+}
+
+.code-name {
+    text-align: left;
+}
+
+.course-name {
+    text-align: left;
+}
+
+.course-progression {
+    text-align: center;
+}
+
+#main-table tr:last-child {
+    border-bottom: none;
+}
+
+
+/*.table-row {}*/

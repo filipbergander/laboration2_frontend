@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    text-align: left;
+    font-weight: 400;
+    margin-top: 5vh;
+    box-shadow: 0 0 2px 3px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    height: 100vh;
+}
+
+.search-bar {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    width: 100%;
+    text-align: left;
+    gap: 5px;
+}
+
+.search-bar input[type=text] {
+    border: 1px solid #00000054;
+    border-radius: 8px;
+    padding: 0.8em;
+}

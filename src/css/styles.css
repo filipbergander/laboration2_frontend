@@ -17,7 +17,6 @@ body {
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
     padding: 2rem;
     height: 100%;
-    min-width: 1140px;
     background-color: bisque;
 }
 
@@ -35,8 +34,6 @@ body {
     border-radius: 8px;
     padding: 0.8em;
 }
-
-th {}
 
 #main-table {
     width: 100%;
@@ -71,4 +68,20 @@ th {}
     text-align: center;
 }
 
-#table-body {}
+@media (max-width: 600px) {
+    #main-table td,
+    #main-table tr {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 330px) {
+    #main-table td:last-child,
+    #main-table th:last-child {
+        text-align: right;
+    }
+    #main-table td:nth-child(2),
+    #main-table th:nth-child(2) {
+        text-align: left;
+    }
+}

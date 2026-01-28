@@ -75,7 +75,7 @@ body {
     }
 }
 
-@media (max-width: 330px) {
+@media (max-width: 370px) {
     #main-table td:last-child,
     #main-table th:last-child {
         text-align: right;
